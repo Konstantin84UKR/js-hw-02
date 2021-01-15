@@ -1,9 +1,10 @@
 const formatString = function(string) {
   let str = string.slice(0, 40);
-  if (string.length > 40) {
-    str += "...";
-  }
-  return str;
+  // if (string.length > 40) {
+  //   str += "...";
+  // }
+  // return str;
+  return string.length <= 40 ? string : `${string.slice(0, 40)} +  "..."`;
 };
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
