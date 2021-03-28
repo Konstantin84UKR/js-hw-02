@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="preloader.css" />
+    <title>PreLoader</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <canvas id="canvasPreLoader"></canvas>
+    </div>
+  </body>
+  <script>
+    window.onload = function() {
+      const preloader = document.querySelector(".preloader");
+
+      window.setTimeout(function() {
+        preloader.classList.add("loaded_hiding");
+        //  preloader.classList.add("loaded");
+        //  preloader.classList.remove("loaded_hiding");
+      }, 10000);
+    };
+  </script>
+  <script type="module" src="/preloader.js"></script>
+</html>
